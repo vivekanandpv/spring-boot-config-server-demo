@@ -1,0 +1,9 @@
+https://spring.io/guides/gs/centralized-configuration/
+
+By default, the configuration values are read on the client’s startup and not again.
+You can force a bean to refresh its configuration (that is, to pull updated values from the
+Config Server) by annotating the MessageRestController with the Spring Cloud Config @RefreshScope
+and then triggering a refresh event.
+
+You need to invoke the refresh Spring Boot Actuator endpoint in order to force the client to
+refresh itself and draw in the new value.
